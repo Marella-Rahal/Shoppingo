@@ -1,0 +1,53 @@
+*{
+    font-family: Sansation;
+    font-style: normal;
+}
+.back-shoppingcard{
+    width:100vw;
+    min-height:100vh;
+    background-color:#FBF2D1;
+}
+.main-line{
+    margin: 20px 107px;
+    display: flex;
+    justify-content: space-between;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-inline: 90px;
+
+}
+.total{
+    margin:15px 90px;   
+    overflow: auto;
+    padding:10px;
+    font-size:17px;
+    font-weight: bold;
+    color:#0E1D51;
+    border:dashed 1px;
+    text-align:center;
+}
+.con-btn{
+    margin-inline: 90px;
+    text-align: center;
+}
+.continue-confirm-btn{
+    border:none;
+    color: #0E1D51;
+    background-color:#F4C444;
+    height: 40px;
+    border-radius: 60px;
+    margin-inline: 10px;
+}
+.continue-confirm-btn:hover{
+    background-color:white;
+    border:solid 2px #F4C444;
+}
+
+@media (max-width:850px){
+    .main-line{
+        display: none;
+    }
+}

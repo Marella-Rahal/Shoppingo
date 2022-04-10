@@ -1,0 +1,23 @@
+.heart-btn{
+    border: none;
+    background: none;
+    width: 1px;
+    height: 1px;
+    color:#0D065E;
+    position: absolute;
+    top:-10px;
+    left: -6px;
+    
+}
+.heart-btn:hover{
+    color: red;
+}
+
+.star-btn{
+    color:#0D065E;
+    font-size: 25px;
+}
+.star-btn:hover{
+    font-size: 35px;
+    color:yellow;
+}

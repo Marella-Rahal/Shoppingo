@@ -1,0 +1,51 @@
+.opinion{
+    background-color :#FFFFFF;
+    padding: 50px;
+}
+.opinion h1,.opinion h2{
+    margin: 50px 10px;
+}
+
+.text-btn{
+    margin: auto;
+} 
+
+.faces{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.faces .face-btn{
+    font-size: 75px;
+    border: none;
+    background-color: white;
+    line-height: 70px;
+}
+
+.faces .face-btn:hover{
+    font-size: 125px;
+}
+
+#comment{
+    color: #0D065E;
+    font-weight: 900;
+    text-align: center;
+    background-color: #F4C444;
+    opacity: 0.5;
+}
+
+.text-btn .send-btn{
+    border: none;
+    border-radius: 50px;
+    width:110px;
+    height: 30px;
+    color: white;
+    background-color: #0D065E;
+}
+.text-btn .send-btn:hover{
+    color:#0D065E;
+    background-color: white !important;
+    border-style:solid;
+    border-color: #0D065E;
+}
+

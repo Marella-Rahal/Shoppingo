@@ -1,0 +1,16 @@
+.feature{
+    background-color :#FBF2D1; 
+}
+.img-feature{
+    margin-top:20px;
+    max-width:  300px;
+}
+.img-feature1{
+    border-radius: 50px;
+    max-height: 250px;   
+}
+.img-feature3{
+    border-radius: 20px;
+    position: relative;
+    top: 30px;
+}

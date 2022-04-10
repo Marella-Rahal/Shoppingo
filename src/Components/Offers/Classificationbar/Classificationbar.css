@@ -1,0 +1,14 @@
+.classificationbar-offers{
+    margin: 0px;
+    padding:50px 30px 30px 20px;
+    width:250px;
+    line-height:33px;
+}
+
+.classificationbar-offers button{
+    width: 130px;
+    border: none;
+    background-color: #F4C444;
+    border-radius:50px;
+    color:#0E1D51;
+}

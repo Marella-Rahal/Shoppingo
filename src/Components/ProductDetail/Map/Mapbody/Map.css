@@ -1,0 +1,27 @@
+.marker-color{
+    position:absolute;
+    z-index:1;
+    top: 1%;
+    left: 1%;
+    width:fit-content;
+    height:fit-content;
+    background-color:white;
+    color: #0E1D51;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.marker-color div{
+    margin: 1px;
+}
+
+.marker-color button{
+    border: none;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}

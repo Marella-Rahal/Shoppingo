@@ -1,0 +1,18 @@
+*{
+    font-family: Sansation;
+    font-style: normal;
+}
+.back{
+    width:100vw;
+    min-height:100vh;
+    background-color:#FBF2D1;
+}
+.product{
+    position: relative;
+    margin-left: 170px;
+    margin-right: 30px;
+    margin-top: -400px; 
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}

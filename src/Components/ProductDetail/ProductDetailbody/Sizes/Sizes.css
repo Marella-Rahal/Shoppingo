@@ -1,0 +1,20 @@
+.radio-style::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    border: solid 1px #0E1D51;
+    position: absolute;
+    visibility: visible;
+    background-color: white;
+}
+
+.radio-style:checked::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    position: absolute;
+    visibility: visible;
+    border: solid 7px #0E1D51;
+}

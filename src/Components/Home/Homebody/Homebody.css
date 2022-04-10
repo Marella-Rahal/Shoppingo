@@ -1,0 +1,35 @@
+* {
+    font-family: 'Sansation';
+    font-style: normal;
+}
+
+.h1-div-btn-margin{
+    margin:150px 10px;
+}
+.btn-mash{
+    color: white;
+    background-color: #0D065E;
+    border: none;
+    font-weight: bolder;
+    width: 150px;
+    height: 40px;
+    margin-top:130px;
+    margin-left:5px;
+    border-radius: 50px;
+}
+.btn-mash:hover{
+    color: #0D065E;
+    border: solid 2px #0D065E;
+    background-color:white;
+}
+.background-img{
+    width:50%;
+    margin-top : -110px
+}
+.description{
+    color:#11324D;
+    font-weight: 1000;
+    font-size: 17px;
+    line-height:39.17px;
+    max-width:400px;
+}  

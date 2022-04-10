@@ -1,0 +1,23 @@
+.heart-btn-offers{
+    border: none;
+    background: none;
+    width: 1px;
+    height: 1px;
+    color:#0D065E;
+    position: absolute;
+    top:-10px;
+    left: -6px;
+    
+}
+.heart-btn-offers:hover{
+    color: red;
+}
+
+.star-btn-offers{
+    color:#0D065E;
+    font-size: 25px;
+}
+.star-btn-offers:hover{
+    font-size: 35px;
+    color:yellow;
+}

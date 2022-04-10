@@ -1,0 +1,115 @@
+* {
+    font-family: 'Sansation';
+    font-style: normal;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*************************/
+
+.navbar{
+    width: 100%;
+    background-color: #8E7D45;
+    color: white;
+    display:flex;
+}
+
+/*************************/
+
+.brand{
+    margin-top: 5px;
+    margin-left: 20px;
+    display: inline;
+}
+
+/*************************/
+
+.tabs{
+    display: flex;
+    align-items: center;
+}
+
+/*************************/
+
+.nav-icons{
+    color: white !important;
+    margin-right: 15px !important;
+}
+.nav-icons:hover{
+    color: #0D065E !important;
+}
+
+/**************************/
+
+.nav-links{
+    margin-right: 15px;
+    color: white;
+    text-decoration:none !important;
+}
+.nav-links:hover{
+    color:#0D065E;
+}
+
+/***************************/
+
+.log-btn,.sign-btn{
+    width: 70px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 50px;
+    color: #8E7D45;
+    background-color:white;
+}
+.log-btn:hover,.sign-btn:hover{
+    color: white;
+    background-color: #0D065E;
+}
+
+/*****************************/
+
+.toggle-btn{
+    display: none;
+    margin-right: 20px;
+    width: 50px;
+    background: none;
+    border: solid 2px white;
+}
+
+.toggle-btn:focus{
+    box-shadow: 2px 2px 2px 2px rgba(255,255,255,0.3);
+}
+
+/*****************************/
+
+
+@media (max-width:745px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .tabs{
+        flex-direction:column;
+        display: none;
+    }
+
+    .toggle-btn{
+        display: inline;
+    }
+
+    .nav-toggle{
+        width: 100%;
+        display: flex ; 
+        justify-content: space-between;  
+    }
+    
+    .log-btn,.sign-btn{
+        margin-block: 5px;
+    }
+}
+
+@media (min-width:746px){
+    .tabs{
+        display: flex !important;
+    }
+}

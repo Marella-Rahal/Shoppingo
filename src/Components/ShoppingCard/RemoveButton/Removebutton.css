@@ -1,0 +1,16 @@
+.remove-btn{
+    color:#6B7AA1;
+    background:none ;
+    border:none;
+    margin:0px 0px 30px 80px;
+    text-decoration: underline;
+}
+.remove-btn:hover{
+    color:#0E1D51;
+}
+@media (max-width:850px){
+    .remove{
+        text-align: center;
+        margin-right: 100px;
+    }
+}

@@ -1,0 +1,37 @@
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%; 
+    min-height: 100vh;
+    background-color:#FBF2D1;
+    padding: 20px;
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:400px;
+}
+
+.add-shoppingcard{
+    background-color:#F9DD4B;
+    color:#0E1D51;
+    border-radius: 50px;
+    margin-left: 15px;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+
+.add-shoppingcard:hover{
+    color: #F9DD4B;
+    background-color: #0E1D51;
+}
+
+.arrowforward{
+    color:red !important;
+    float:right;
+}
+

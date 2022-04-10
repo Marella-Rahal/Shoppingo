@@ -1,0 +1,15 @@
+.back-heart{
+    width:100vw;
+    min-height:100vh;
+    background-color:#FBF2D1;
+}
+.product-heart{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:530px){
+    .product-heart{
+        flex-direction: column;
+        align-items: center;
+    }
+}

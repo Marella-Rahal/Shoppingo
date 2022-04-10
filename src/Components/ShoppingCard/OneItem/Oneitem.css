@@ -1,0 +1,108 @@
+.oneitem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.items-padding h5{
+    display:none; 
+}
+.store-name{
+    font-size:16px;
+    font-weight:bolder;
+    color:#7D6A06;
+}
+.view-map{
+    color:#7D6A06;
+    
+}
+.view-map:hover{
+    color:#0E1D51;
+}
+.location{
+    margin-top: 30px;
+    text-align: center;
+}
+.size{
+    padding: 5px 11px 7px 12px;
+    margin-top: 35px;
+    border:dashed 1px;  
+    width: fit-content;
+    height: 40px;
+    font-size:20px;
+    font-weight:bold;
+}
+.inc-btn{
+    border: solid 1px black;
+    background-color: #0B0A50; 
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+    width: 40px;
+    height: 40px;
+ }
+.inc-btn:hover{
+    color: #0B0A50;
+    background-color: white;
+    border: solid 2px #0B0A50;
+}
+.quantity-counter{
+    display:inline;
+    padding-top:11px;
+    padding-bottom:9px;
+    padding-inline:15px;
+    border:solid 1px;
+}
+.dec-btn{
+    margin-top: 35px;
+    border: solid 1px;
+    background-color: #D1E2FB;
+    font-size: 20px;
+    font-weight:bolder;
+    width: 40px;
+    height: 40px;
+}
+.dec-btn:hover{
+    background-color: white;
+    border: solid 2px black;
+}
+.price{
+    padding: 5px;
+    margin-top: 36px;
+    color:#0E1D51;
+    border:dashed 1px;
+    width: fit-content;
+    height: 40px;
+    overflow: auto;
+    font-weight: bolder;
+}
+.items-padding{
+     padding-right: 10px;
+}
+
+@media (max-width:850px){
+    .div-container{
+        margin-inline:auto;
+        margin-bottom: 30px;
+        padding-block: 20px;
+        /* border:solid 1px #0B0A50; */
+        border-radius: 100px;
+        width: 320px;
+        background-color: rgba(255, 228, 196, 0.493);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+    .oneitem{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .items-padding h5{
+        display:block;
+        margin-top: 40px;
+    }
+    .items-padding:first-child h5{
+        margin-top: 0px;
+    }
+    .hr{
+        display: none;
+    }
+}
