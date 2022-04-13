@@ -31,6 +31,17 @@ function Favourite(props) {
             <ProductCard/>
             <ProductCard/>
             <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
 
 
             </div>    

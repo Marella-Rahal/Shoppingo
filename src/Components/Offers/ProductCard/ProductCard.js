@@ -9,7 +9,7 @@ function ProductCard(props) {
     const route=useNavigate();
 
     return (
-        <div className='card' style={{width:'200px' ,marginInline:'20px',marginBottom:'20px',paddingBottom:'20px'}}>
+        <div className='card' style={{width:'200px' ,marginInline:'10px',marginBottom:'20px',paddingBottom:'20px'}}>
             <img src={j} alt="product img" className="card-img-top" onClick={()=>route('/ProductDetail')} />
 
             <button className='card-img-overlay heart-btn-offers'>

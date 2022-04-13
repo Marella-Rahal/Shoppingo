@@ -6,6 +6,7 @@
 .product-heart{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 @media (max-width:530px){
     .product-heart{

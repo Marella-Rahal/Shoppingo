@@ -8,15 +8,16 @@ import Colors from './Colors/Colors';
 import Sizes from './Sizes/Sizes';
 import Details from './Details';
 import Map from '../Map/Mapbody/Map';
+import { useNavigate } from 'react-router';
 
 function Productdetailbody(props) {
-
+    const route=useNavigate();
 
     const description=useRef();
     const color=useRef();
     const size=useRef();
     const price_loc=useRef();
-    const add_product_display='block';
+    // const add_product_display='block';
     const withOffer=true;
 
     return (
@@ -35,9 +36,9 @@ function Productdetailbody(props) {
                         <div style={{display:'flex',flexDirection:'column',justifyContent:'space-evenly'}}>
                             <button type='button' className='add-shoppingcard'>Add to <AddShoppingCart/></button>
 
-                            <button type='button' className='add-shoppingcard' style={{display:add_product_display}}>
+                            {/* <button type='button' onClick={()=>{route('/AddProduct')}} className='add-shoppingcard' style={{display:add_product_display}}>
                                 Add Product
-                            </button>
+                            </button> */}
                         </div>
 
                     </div>

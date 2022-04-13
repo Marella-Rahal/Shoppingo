@@ -12,6 +12,8 @@ import Productdetailbody from './Components/ProductDetail/ProductDetailbody/Prod
 import AddProduct from './Components/AddProduct/Home/AddProduct';
 import Profile from './Components/Profile/ProfileInfo';
 import InsertP from './Components/InsertPaymentPage/InsertPayment';
+import InsertRequiredPayment from './Components/InsertRequiredPayment/InsertRequiredPayment';
+import RequiredPayment from './Components/RequiredPayment/RequiredPayment';
 
 
 function App(props) {
@@ -35,11 +37,19 @@ function App(props) {
 
                 <Route path="/ProductDetail" element={<Productdetailbody/>}/>
 
-                <Route path="/Admin/AddProduct" element={<AddProduct/>}/>
+                <Route path="/AddProduct" element={<AddProduct/>}/>
 
                 <Route path="/Profile" element={<Profile/>}/>
 
-                <Route path="/Mangment/InsertPayment" element={<InsertP/>}/>
+                <Route path="/Mangment/Dashbord" element={<InsertP/>}/>
+
+                <Route path="/Mangment/Payments" element={<InsertP/>}/>
+
+                <Route path="/Mangment/RequiredPayments" element={<RequiredPayment/>}/>
+
+                <Route path="/Mangment/InsertPayments" element={<InsertP/>}/>
+
+                <Route path="/Mangment/InsertRequiredPayments" element={<InsertRequiredPayment/>}/>
 
 
                 <Route path='*' element={<NotFound/>} />

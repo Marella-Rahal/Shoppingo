@@ -7,7 +7,7 @@ export const Container=styled.div`
 `
 export const InnerContainer = styled.div`
   width:80%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   position:absolute;
@@ -18,7 +18,7 @@ export const InnerContainer = styled.div`
   background: #fbf2d1;
   @media (max-width: 910px) {
     width:100%;
-    height:165vh ;
+    min-height:165vh ;
     top:72px;
     left:0px
   }
