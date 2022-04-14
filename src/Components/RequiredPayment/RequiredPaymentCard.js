@@ -28,7 +28,7 @@ function RequiredPaymentCard(props) {
     
 
     return (
-        <div style={{width:'260px',height:'fit-content',lineHeight:'40px',borderRadius:'20px',padding:'10px',backgroundColor:'rgba(208, 148, 148, 0.21)',marginBottom:'15px',marginRight:'7px',display:'flex',flexDirection:'column'}}>
+        <div style={{width:'260px',height:'fit-content',lineHeight:'40px',borderRadius:'20px',padding:'10px',backgroundColor:'rgba(208, 148, 148, 0.21)',marginBottom:'20px',marginRight:'7px',display:'flex',flexDirection:'column',boxShadow:'5px 5px 5px 5px rgba(0,0,0,0.25)'}}>
 
             <span style={{color:'#11324D'}}>
                 Payment Name &nbsp;:&nbsp;&nbsp;
@@ -42,12 +42,12 @@ function RequiredPaymentCard(props) {
 
             <span style={{color:'#11324D'}}>
                 The Rest &nbsp;:&nbsp;&nbsp;
-                <span style={{color:'#6B7AA1'}}>200000</span> 
+                <span style={{color:'#6B7AA1'}}>200000 s.p</span> 
             </span>
 
             <span style={{color:'#11324D'}}>
                 Paid So Far &nbsp;:&nbsp;&nbsp;
-                <span style={{color:'#6B7AA1'}}>232000</span> 
+                <span style={{color:'#6B7AA1'}}>232000 s.p</span> 
             </span>
 
             <span style={{color:'#11324D'}}>

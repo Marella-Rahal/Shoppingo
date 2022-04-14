@@ -114,7 +114,7 @@ function InsertRequiredPayment(props){
                     </h2>
                     <hr style={{
                         border: '1px solid #11324D',
-                        width: '75%',
+                        width: '80%',
                         height: '0px',
                         left: '390px',
                         marginTop:'0px'
@@ -148,6 +148,35 @@ function InsertRequiredPayment(props){
                                 </InputContainer>
 
                                 <InputContainer>
+                                    <Label>payment Type</Label>
+                                    <select
+                                    id="cars"
+                                    name="cars"
+                                    style={{
+                                    border:'none',
+                                    borderRadius:'10px',
+                                    width:'90%',
+                                    backgroundColor:'rgba(208,148,148,0.21)',
+                                    color: 'black',
+                                    }}
+                                    >
+                                    <option defaultValue="" disabled hidden>
+                                        Options
+                                    </option>
+                                    <option defaultValue="Bank">Bank</option>
+                                    <option defaultValue="Rent">Rent</option>
+                                    <option defaultValue="Bills">Bills</option>
+                                    <option defaultValue="Debt">Debt</option>
+                                    <option defaultValue="Others">Others</option>
+                                    </select>
+                                </InputContainer>
+
+                            </InputContainer>
+
+                        </FormContainer>
+
+                        
+                        <InputContainer style={{width:'60%',alignItems:'center',marginTop:'30px'}}>
                                 <Label>Payment Repeater</Label>
                                 <div style={{display:'flex',marginTop:'7px'}}>
                                     <label for='Yes'>Yes</label>
@@ -155,11 +184,7 @@ function InsertRequiredPayment(props){
                                     <label for='No'>No</label>
                                     <Radio type="radio" name='repeater' id='No' />
                                 </div>
-                                </InputContainer>
-
-                            </InputContainer>
-
-                        </FormContainer>
+                        </InputContainer>
 
                      </form>
 

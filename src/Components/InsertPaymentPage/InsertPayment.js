@@ -99,7 +99,7 @@ function InsertP(props) {
           </h2>
           <hr style={{
             border: '1px solid #11324D',
-            width: '75%',
+            width: '80%',
             height: '0px',
             left: '390px',
             marginTop:'0px'
@@ -118,11 +118,6 @@ function InsertP(props) {
                 <InputContainer>
                   <Label>payment Date</Label>
                   <Input type="date" style={{ fontSize: '25px', color: 'gray', padding: '10px' }}></Input>
-
-
-
-
-
                 </InputContainer>
               </InputContainer>
               <InputContainer>
@@ -147,9 +142,13 @@ function InsertP(props) {
                       <option defaultValue="" disabled hidden>
                         Options
                       </option>
-                      <option defaultValue="saab">Saab 95</option>
-                      <option defaultValue="mercedes">Mercedes SLK</option>
-                      <option defaultValue="audi">Audi TT</option>
+                      <option defaultValue="Food">Food</option>
+                      <option defaultValue="Clothes">Clothes</option>
+                      <option defaultValue="School Cost">School Cost</option>
+                      <option defaultValue="Transportation">Transportation</option>
+                      <option defaultValue="Health insurance">Health insurance</option>
+                      <option defaultValue="Entertainment">Entertainment</option>
+                      <option defaultValue="Others">Others</option>
                     </select>
                 </InputContainer>
               </InputContainer>

@@ -1,5 +1,7 @@
 .filter-bar{
-    display:flex;    justify-content:space-between !important;margin-top:5px;
+    display:flex;   
+    justify-content:space-between !important;
+    margin-top:5px;
     font-size:20px;
     width:97%;
     color:#11324D;
@@ -7,6 +9,7 @@
 .filter{
     position:relative;
     cursor:pointer;
+    margin-inline: 10px;
 }
 .filter:hover{
     text-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.4);
