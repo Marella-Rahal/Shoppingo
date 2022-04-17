@@ -48,7 +48,7 @@ function Navbar(props) {
                     Product
                 </Link>
 
-                <Link  to="/Managment" className='nav-links'>
+                <Link  to="/Mangment/Dashbord" className='nav-links'>
                     Managment
                 </Link>
 

@@ -15,6 +15,7 @@ import InsertP from './Components/InsertPaymentPage/InsertPayment';
 import InsertRequiredPayment from './Components/InsertRequiredPayment/InsertRequiredPayment';
 import RequiredPayment from './Components/RequiredPayment/RequiredPayment';
 import Payment from './Components/Payment/Payment';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 
 function App(props) {
@@ -42,7 +43,7 @@ function App(props) {
 
                 <Route path="/Profile" element={<Profile/>}/>
 
-                <Route path="/Mangment/Dashbord" element={<InsertP/>}/>
+                <Route path="/Mangment/Dashbord" element={<Dashboard/>}/>
 
                 <Route path="/Mangment/Payments" element={<Payment/>}/>
 

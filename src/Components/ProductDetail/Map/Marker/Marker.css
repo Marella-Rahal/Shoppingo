@@ -2,28 +2,9 @@
     width: fit-content;
     height: fit-content;
     border-radius: 200px;
-    position: relative;
+    z-index: 0;
 }
-
 /* ********************* */
-
-.marker:hover{
-    z-index: 1;
-}
-.marker:hover .marker-btn{
-    width: 50px;
-    height: 50px;
-}
-.marker:hover .marker-img{
-    width: 43px;
-    height: 42px;
-}
-.marker:hover .marker-infowindow{
-    display: flex;
-    flex-direction: column;
-}
-
-/* ********************** */
 
 .marker-btn{
     background-color: blue;
@@ -54,33 +35,5 @@
     border-radius:200px;
 }
 
-/* *********************** */
 
-.marker-infowindow{
-    display: none;
-    position: absolute;
-    bottom: 100%;
-    /* right: -60px;  */
-    left: -100%;
-    width:150px;
-    height: fit-content;
-    padding: 7px;
-    border-radius: 50px;
-    color: #0E1D51;
-    background-color: white;
-    box-shadow: 0px 15px 15px 15px rgba(0, 0, 0, 0.4); 
-}
-/* .marker-infowindow::after {
-    content: " ";
-    position: absolute;
-    top: 99%; /* At the bottom of the tooltip 
-    left: 50%;
-    margin-left: -6px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: white transparent transparent transparent;
-} */
-.marker-infowindow div{
-    margin: 3px;
-}
-/* ********************* */
+/* *********************** */

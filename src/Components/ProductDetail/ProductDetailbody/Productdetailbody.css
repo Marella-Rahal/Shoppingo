@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:400px;
+    width:31%;
 }
 
 .add-shoppingcard{
@@ -33,5 +33,15 @@
 .arrowforward{
     color:red !important;
     float:right;
+}
+
+@media (max-width:1200px){
+    .detail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-detail{
+        width: 400px;
+    }
 }
 
