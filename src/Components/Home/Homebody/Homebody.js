@@ -22,9 +22,8 @@ function Homebody(props) {
                     Our website allows you to search the market from your home AND helps you control your monthly expenses and remind you of your bills
                 </p>
 
-                <button onClick={()=>{route("/Shop")}} type="button" className=" btn-mash">Shop Now</button>
+                <button onClick={()=>{route("/LogIn")}} type="button" className="btn-mash">Start Make it Easy</button>
 
-                <button onClick={()=>{route("/Mangment")}} type="button" className="btn-mash">Manage Now</button>
                 
              </div>
              

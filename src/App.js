@@ -16,6 +16,7 @@ import InsertRequiredPayment from './Components/InsertRequiredPayment/InsertRequ
 import RequiredPayment from './Components/RequiredPayment/RequiredPayment';
 import Payment from './Components/Payment/Payment';
 import Dashboard from './Components/Dashboard/Dashboard';
+import UpgradeProfile from './Components/UpgradeProfile/UpgradeProfile';
 
 
 function App(props) {
@@ -36,6 +37,8 @@ function App(props) {
                 <Route path='/LogIn' element={<LogIn/>}/>
 
                 <Route path='/SignUp' element={<SignUp/>}/>
+
+                <Route path='/UpgradeProfile' element={<UpgradeProfile/>}/>
 
                 <Route path="/ProductDetail" element={<Productdetailbody/>}/>
 

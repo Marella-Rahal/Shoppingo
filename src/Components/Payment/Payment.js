@@ -11,14 +11,25 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import { PaymentsContainer, PaymentsInfo, Paragraph,Button} from '../InsertPaymentPage/InsertPaymentcss';
 import PaymentItem from './PaymentItem.js';
 
+import IncomePopup from '../PopUp/IncomePopup';
+import $ from 'jquery';
+
 
 
 function Payment (props){
     const route=useNavigate();
 
+    const handlePopup=(e)=>{
+        e.preventDefault();
+        $(".popupdiv").fadeTo(700,1);
+        $(".fullscreen").fadeTo(700,1);
+        $('body').css("overflow","hidden");
+    }
+
     return(
 
         <Container>
+            <IncomePopup title="Please Insert Your Income Value"/>
             <SideNavbar/>
             <InnerContainer>
                 <TopNavbar style={{ justifyContent: 'end' }}>
@@ -60,7 +71,7 @@ function Payment (props){
                             <Paragraph>Total income</Paragraph>
                             <div style={{ display: "flex", width: "100%", justifyContent: "space-between", alignItems: "center" }}>
                             <Paragraph>335,000 S.P</Paragraph>
-                            <button style={{background:"none",border:"none",color: "#11324D"}}>
+                            <button style={{background:"none",border:"none",color: "#11324D"}} onClick={handlePopup}>
                                 <AddCircleOutlineIcon style={{ marginRight: "15px", fontSize: "xx-large" }}></AddCircleOutlineIcon>
                             </button>
                             </div>
@@ -79,7 +90,7 @@ function Payment (props){
                             <div style={{ display: "flex", width: "100%", justifyContent: "space-between", alignItems: "center" }}>
                             <Paragraph>134,500 S.P </Paragraph>
                             
-                            <Link to='/Mangment/Payments' style={{ marginRight: "10px",textDecoration: "none" , color: "#6b7aa1" ,fontSize:"small"}}>View All<KeyboardDoubleArrowRightIcon style={{fontSize:"small"}}/></Link>
+                            <Link to='/Mangment/Dashbord' style={{ marginRight: "10px",textDecoration: "none" , color: "#6b7aa1" ,fontSize:"small"}}>View All<KeyboardDoubleArrowRightIcon style={{fontSize:"small"}}/></Link>
                             </div>
                         </PaymentsInfo>
 

@@ -23,7 +23,15 @@ export const InnerContainer = styled.div`
     left:0px
   }
 `;
+export const Content = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
 
+  @media (max-width: 910px) {
+    flex-direction: column-reverse;
+  }
+`;
 
 
 export const Title = styled.h1`
@@ -62,7 +70,7 @@ export const Button = styled.button`
   margin-top: 65px;
   width: 30%;
   height: 32px;
-  margin-left: 15px;
+  margin-left: 10px;
   color: #6b7aa1;
   border: none;
   &:hover {

@@ -113,9 +113,9 @@ export const RightSection=styled.div`
 width:40%;
 display:flex;
 flex-direction:column;
-border: 2px solid gray;
+border: 2px dashed rgba(0,0,0,0.1);
 @media (max-width: 910px) {
-  width:100%;
+  width:98%;
   margin: 20px 0px;
  }
 `

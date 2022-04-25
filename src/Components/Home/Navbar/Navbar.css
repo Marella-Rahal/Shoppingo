@@ -83,7 +83,7 @@ body{
 /*****************************/
 
 
-@media (max-width:745px){
+@media (max-width:770px){
     .navbar{
         flex-direction: column;
     }
@@ -108,7 +108,7 @@ body{
     }
 }
 
-@media (min-width:746px){
+@media (min-width:771px){
     .tabs{
         display: flex !important;
     }

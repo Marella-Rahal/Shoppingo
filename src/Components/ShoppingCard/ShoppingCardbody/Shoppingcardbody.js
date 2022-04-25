@@ -31,7 +31,6 @@ function Shoppingcardbody(props) {
                 
                 <Oneitem/>
                 <Oneitem/>
-                <Oneitem/>
 
             </div>
 

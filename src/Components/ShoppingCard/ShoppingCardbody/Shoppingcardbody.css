@@ -31,6 +31,7 @@
 }
 .con-btn{
     margin-inline: 90px;
+    padding-bottom:20px;
     text-align: center;
 }
 .continue-confirm-btn{
@@ -42,7 +43,7 @@
     margin-inline: 10px;
 }
 .continue-confirm-btn:hover{
-    background-color:white;
+    background-color:#FBF2D1;
     border:solid 2px #F4C444;
 }
 

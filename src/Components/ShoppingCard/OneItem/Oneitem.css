@@ -42,7 +42,7 @@
  }
 .inc-btn:hover{
     color: #0B0A50;
-    background-color: white;
+    background-color: #FBF2D1;
     border: solid 2px #0B0A50;
 }
 .quantity-counter{
@@ -62,7 +62,7 @@
     height: 40px;
 }
 .dec-btn:hover{
-    background-color: white;
+    background-color: #FBF2D1;
     border: solid 2px black;
 }
 .price{

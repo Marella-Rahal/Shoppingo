@@ -4,12 +4,12 @@ import { PieChart, Pie, Legend, Tooltip } from "recharts";
 
 const data01 = [
   { name: "Food", value: 400, fill:"aqua"},
-  { name: "Clothes", value: 300, fill:"black" },
-  { name: "Transport", value: 300, fill:'green' },
-  { name: "School Cost", value: 200, fill:'chocolate' },
-  { name: "Health Inserunce", value: 278, fill:'olive' },
-  { name: "Entertainment", value: 189, fill:'blue' },
-  { name: "Others", value: 189, fill:'fuchsia' }
+  { name: "Clothes", value: 300, fill:"#86E3CE" },
+  { name: "Transport", value: 300, fill:'#D0E6A5' },
+  { name: "School Cost", value: 200, fill:'#FFDD94' },
+  { name: "Health Inserunce", value: 278, fill:'#FA897B'},
+  { name: "Entertainment", value: 189, fill:'#CCABD8'},
+  { name: "Others", value: 189, fill:'grey' }
 ];
 
 
