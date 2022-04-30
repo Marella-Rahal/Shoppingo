@@ -1,4 +1,4 @@
-import { ArrowDropDown, Home, LocalOffer, LogoutOutlined, Store, WorkOutline } from '@mui/icons-material';
+import { ArrowDropDown, Dashboard, Home, LocalOffer, LogoutOutlined, Store, WorkOutline } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import React, { useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -45,14 +45,19 @@ function SideNavbar(props) {
             <div ref={tabs} className='side-navbar-tabs' >
 
                 <div>
-                    <IconButton className='nav-icons' onClick={() => { route('/') }}>
+                    <IconButton className='nav-icons' onClick={() => { route('/') }} style={{marginBottom:'5px'}}>
                         <Home />
                     </IconButton>
                     <Link to="/" className='nav-links'>Home</Link>
                 </div>
 
                 <div>
-                    <IconButton className='nav-icons' onClick={() => { route('/Offers') }}>
+                    <Store className='nav-icons' onClick={() => { route('/Shop') }} style={{marginBottom:'5px'}}/>
+                    <Link to='/Shop' className='nav-links'>Store</Link>
+                </div>
+
+                <div>
+                    <IconButton className='nav-icons' onClick={() => { route('/Offers') }} style={{marginBottom:'5px'}}>
                         <LocalOffer />
                     </IconButton>
                     <Link to='/Offers' className='nav-links'>Offers</Link>
@@ -60,7 +65,7 @@ function SideNavbar(props) {
 
                 <div className='side-navbar-mangment'  >
 
-                    <IconButton className='nav-icons'>
+                    <IconButton className='nav-icons' style={{marginBottom:'5px'}}>
                         <WorkOutline />
                     </IconButton>
 
@@ -84,13 +89,15 @@ function SideNavbar(props) {
                 </div>
 
                 <div>
-                    <Store className='nav-icons' onClick={() => { route('/Shop') }} />
-                    <Link to='/Shop' className='nav-links'>Store</Link>
+                    <IconButton className='nav-icons' onClick={() => { route('/Mangment/SellerDashboard') }} style={{marginBottom:'5px'}}>
+                        <Dashboard/>
+                    </IconButton>
+                    <Link to="/Mangment/SellerDashboard" className='nav-links'>Seller Dashboard</Link>
                 </div>
 
                 <div className='log-out' style={{ marginTop: "0px" }}>
 
-                    <IconButton className='nav-icons'>
+                    <IconButton className='nav-icons' style={{marginBottom:'5px'}}>
                         <LogoutOutlined />
                     </IconButton>
 

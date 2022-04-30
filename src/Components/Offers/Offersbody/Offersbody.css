@@ -4,15 +4,14 @@
 }
 .back-offers{
     width:100vw;
-    min-height:100vh;
+    min-height:140vh;
     background-color:#FBF2D1;
 }
 .product-offers{
     position: relative;
     margin-left: 170px;
     margin-right: 30px;
-    margin-top: -400px; 
-    min-width: 200px;
+    margin-top: -750px; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

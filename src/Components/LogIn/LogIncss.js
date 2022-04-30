@@ -166,7 +166,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Link = styled.a`
+export const Link1 = styled.a`
 color: #A58943;
 target="_blank";
 font-size: 35px;
@@ -184,6 +184,7 @@ export const Input = styled.input`
   border-radius: 27px;
   border: 1px solid #886918;
   margin: 5px;
+  margin-block:17px;
   padding-left: 15px;
   box-shadow: 0px 0px 3px #886918;
 
@@ -207,6 +208,11 @@ export const Input2 = styled.button`
   align-self: self-start;
   font-family: 'Cabin';
   color: #e7e0c9;
+  &:hover{
+    background-color:white;
+    color:#a58943;
+    border:2px solid #a58943;
+  }
 `;
 
 export const Form = styled.form`
@@ -233,4 +239,26 @@ export const Link2 = styled.a`
   color: #11324d;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
+  cursor:pointer;
+  &:hover{
+    text-decoration:underline !important;
+  }  
+`;
+
+export const Sendcode=styled.button`
+margin-right: 15px;
+align-self:self-end;
+border:none;
+background:none;
+font-family:Cabin;
+font-weight: 400;
+font-size: 24px;
+color: #11324d;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-decoration: none;
+cursor:pointer;
+&:hover{
+  text-decoration:underline !important;
+}  
+
 `;

@@ -9,8 +9,8 @@ function ProductCard(props) {
     const route=useNavigate();
 
     return (
-        <div className='card' style={{width:'200px' ,marginInline:'10px',marginBottom:'20px',paddingBottom:'20px'}}>
-            <img src={j} alt="product img" className="card-img-top" onClick={()=>route('/ProductDetail')} />
+        <div className='card' style={{width:'200px' ,marginInline:'10px',marginBottom:'20px',paddingBottom:'20px',borderRadius:'20px',boxShadow:'5px 5px 5px 5px rgba(0,0,0,0.25)'}}>
+            <img src={j} alt="product img" className="card-img-top" style={{borderRadius:'20px'}} onClick={()=>route('/ProductDetail')} />
 
             <button className='card-img-overlay heart-btn-offers'>
             <Favorite/>

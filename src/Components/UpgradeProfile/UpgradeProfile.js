@@ -14,7 +14,17 @@ import {
   Rsection,
   Form,
 } from '../SignUp/SignUPcss';
+import {
+  FullScreen,
+  Popup,
+  ChooseButton,
+  ChooseContainer,
+  VLine,
+} from '../LogIn/LogIncss';
 import { HLine } from '../LogIn/LogIncss';
+import { useNavigate } from 'react-router';
+import $ from 'jquery';
+
 
 export const Lsection = styled.div`
   position: relative;
@@ -29,10 +39,53 @@ export const Lsection = styled.div`
 `;
 
 function UpgradeProfile() {
+  const route = useNavigate();
+
+  const handlesubmit = (e) => {
+    e.preventDefault();
+    $('.popupdiv').fadeTo(700, 1);
+    $('.fullscreen').fadeTo(700, 1);
+    $('body').css('overflow', 'hidden');
+  };
+
   return (
     <>
       <Navbar />
       <Container>
+      <FullScreen className="fullscreen">
+                    <Popup className="popupdiv">
+                        <h1
+                        style={{
+                            color: 'white',
+                            paddingBottom: '50px',
+                            textAlign: 'center',
+                        }}
+                        >
+                        Where would You Go
+                        </h1>
+                        <ChooseContainer>
+                        <ChooseButton
+                            type="button"
+                            onClick={() => {
+                            route('/Mangment/Dashbord');
+                            $('body').css('overflow', 'auto');
+                            }}
+                        >
+                            Manage Your Money
+                        </ChooseButton>
+                        <VLine />
+                        <ChooseButton
+                            type="button"
+                            onClick={() => {
+                            route('/Shop');
+                            $('body').css('overflow', 'auto');
+                            }}
+                        >
+                            Find Your Product
+                        </ChooseButton>
+                        </ChooseContainer>
+                    </Popup>
+        </FullScreen>
         <Lsection>
           <img
             src={LSbackground}
@@ -108,7 +161,7 @@ function UpgradeProfile() {
               placeholder="     Enter Your Address "
               style={{ marginBottom: '30px' }}
             ></Input>
-            <Input2 type="button" style={{ color: '#fff' }}>
+            <Input2 type="button" onClick={handlesubmit}>
               Upgrade
             </Input2>
           </Form>

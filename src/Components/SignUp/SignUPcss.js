@@ -96,6 +96,7 @@ export const Contain = styled.span`
   font-size: 37px;
   line-height: 61px;
   color: #6b7aa1;
+  margin-bottom:20px;
 `;
 export const ButtonS = styled.div`
   display: flex;
@@ -113,6 +114,11 @@ export const Button1 = styled.button`
   align-items: center;
   border: 1px solid #a58943;
   margin-right: 10px;
+  padding:15px;
+  margin-inline:10px;
+  &:hover{
+    box-shadow:2px 2px 7px 7px rgba(0,0,0,0.2);
+  }
   @media (max-width: 700px) {
     margin: 10px;
   }
@@ -120,6 +126,7 @@ export const Button1 = styled.button`
 export const RedGoogle = styled(Google)`
   color: red;
   width: 41px;
+  margin-right:7px;
 `;
 export const Button1C = styled.div`
   font-family: 'Cabin';
@@ -136,11 +143,17 @@ export const Button2 = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:13px;
+  margin-inline:10px;
   border: 1px solid #a58943;
+  &:hover{
+    box-shadow:2px 2px 7px 7px rgba(0,0,0,0.2);
+  }
 `;
 export const BlueFacebook = styled(Facebook)`
   color: blue;
   width: 30px;
+  margin-right:7px;
 `;
 export const Button2c = styled.div`
   font-family: 'Cabin';
@@ -156,6 +169,7 @@ export const Input = styled.input`
   border-radius: 27px;
   border: 1px solid #886918;
   margin: 5px;
+  margin-block:17px;
   padding-left: 15px;
   box-shadow: 0px 0px 3px #886918;
 
@@ -173,9 +187,15 @@ export const Input2 = styled.button`
   width: 15%;
   min-height: 35px;
   background: #a58943;
+  color:white;
   border-radius: 10px;
   margin: 15px;
   border: none;
+  &:hover{
+    color:#a58943;
+    background-color:white;
+    border:2px solid #a58943;
+  }
 `;
 export const Form = styled.form`
   width: 100%;

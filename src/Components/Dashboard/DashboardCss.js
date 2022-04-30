@@ -11,7 +11,7 @@ export const InnerContainer = styled.div`
   left:20%;
   padding-left:15px;
   background: #fbf2d1;
-  @media (max-width: 910px) {
+  @media (max-width: 930px) {
     width:100%;
     top:72px;
     min-height:300vh;
@@ -22,7 +22,7 @@ export const InnerContainer = styled.div`
 export const ParentSection=styled.div`
 width:100%;
 display:flex;
-@media (max-width: 910px) {
+@media (max-width: 930px) {
     flex-direction :column;
  
    }
@@ -31,7 +31,7 @@ export const Lsection = styled.div`
 display:flex;
 flex-direction:column;
 width:30%;
-@media (max-width: 910px) {
+@media (max-width: 930px) {
     width:100%;
     margin: 20px 0px;
  
@@ -61,6 +61,10 @@ border:none;
 border-radius:20px;
 font-size: x-small;
 color:#11324D;
+&:hover{
+  color:#F4C444;
+  background-color:#11324D;
+}
 `
 export const Bsection = styled.div`
 display:flex;
@@ -88,7 +92,7 @@ display:flex;
 flex-direction:column;
 width:30%;
 margin:0px 20px ;
-@media (max-width: 910px) {
+@media (max-width: 930px) {
     width:100%;
     margin: 20px 0px;
    }
@@ -114,7 +118,7 @@ width:40%;
 display:flex;
 flex-direction:column;
 border: 2px dashed rgba(0,0,0,0.1);
-@media (max-width: 910px) {
+@media (max-width: 930px) {
   width:98%;
   margin: 20px 0px;
  }

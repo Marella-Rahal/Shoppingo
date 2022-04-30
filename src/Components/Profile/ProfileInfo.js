@@ -95,10 +95,11 @@ function ProfileInfo(props) {
               <InputText type="password"></InputText>
               <Button1>Edit</Button1>
             </DivSize>
-            <div>
-              <Button>Done</Button>
-              <Button onClick={()=>{route('/AddProduct')}}>Add Product</Button>
-            </div>
+            
+            <Button>Done</Button>
+            
+            <Button style={{minHeight:'50px',width:'63%'}} onClick={()=>{route('/UpgradeProfile')}}>Upgrade Your account to seller</Button>
+            
           </Section>
 
           <Section>
@@ -108,6 +109,7 @@ function ProfileInfo(props) {
                 height: '50vh',
                 display: 'flex',
                 alignItems: 'center',
+                justifyContent:'center',
                 flexDirection: 'column'
 
               }}
@@ -115,10 +117,10 @@ function ProfileInfo(props) {
               <img
                 src={image}
                 alt="preview image"
-                style={{ height: '200px', width: '200px', borderRadius: '50%'}}
+                style={{ height: '250px', width: '250px', borderRadius: '50%',marginTop:'75px'}}
               />
               
-              <label for="img" className="btn btn-info" style={{marginTop:'10px',color:'#6b7aa1',background:'#f5cb59'}}>Change Photo</label>
+              <label for="img" className="btn btn-info" style={{marginTop:'50px',color:'#6b7aa1',background:'#f5cb59'}}>Change Photo</label>
               <input
                 type="file"
                 id="img"
@@ -126,8 +128,6 @@ function ProfileInfo(props) {
                 className="filetype"
                 style={{ marginLeft: '10px',display:'none' }}
               />
-
-              <Button style={{minHeight:'50px',width:'40%',marginTop:'100px'}} onClick={()=>{route('/UpgradeProfile')}}>Upgrade Your account to seller</Button>
              
             </div>
           </Section>

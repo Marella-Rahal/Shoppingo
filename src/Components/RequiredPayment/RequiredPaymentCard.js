@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 
 function RequiredPaymentCard(props) {
 
@@ -7,58 +8,85 @@ function RequiredPaymentCard(props) {
 
     let repeaternote;
     let MonthlyPayment;
+    let monthlyPrice;
+    let LHeight;
+    let bgColor;
+
     if(props.repeater=='yes'){
+
         repeaternote='visible';
+        monthlyPrice='flex';
+
         if(props.paid=='yes'){
             MonthlyPayment='yes';
         }
         else{
             MonthlyPayment='no';
         }
+
         monthly='flex';
         pay_now='none';
+        LHeight='40px';
+        bgColor='rgb(229 181 37 / 21%)';
     }
     else{
+
         repeaternote='hidden';
+        monthlyPrice='none';
         monthly='none';
         pay_now='flex';
+        LHeight='70px';
+        bgColor='rgb(209 216 226 / 57%)';
     }
+
+    
 
     
     
 
     return (
-        <div style={{width:'260px',height:'fit-content',lineHeight:'40px',borderRadius:'20px',padding:'10px',backgroundColor:'rgba(208, 148, 148, 0.21)',marginBottom:'20px',marginRight:'7px',display:'flex',flexDirection:'column',boxShadow:'5px 5px 5px 5px rgba(0,0,0,0.25)'}}>
+        <div style={{width:'260px',height:'fit-content',lineHeight:'40px',borderRadius:'20px',padding:'10px',backgroundColor:bgColor,marginBottom:'20px',marginRight:'15px',display:'flex',flexDirection:'column',boxShadow:'5px 5px 5px 5px rgba(0,0,0,0.25)'}}>
+            
+            <div style={{height:'100%',display:'flex',flexDirection:'column',lineHeight:LHeight}}>
+                <span style={{color:'#11324D'}}>
+                    Payment Name &nbsp;:&nbsp;&nbsp;
+                    <span style={{color:'#6B7AA1'}}>Bank</span> 
+                </span>
 
-            <span style={{color:'#11324D'}}>
-                Payment Name &nbsp;:&nbsp;&nbsp;
-                <span style={{color:'#6B7AA1'}}>Bank</span> 
-            </span>
+                <span style={{color:'#11324D'}}>
+                    Price &nbsp;:&nbsp;&nbsp;
+                    <span style={{color:'#6B7AA1'}}>432000 s.p</span> 
+                </span>
 
-            <span style={{color:'#11324D'}}>
-                Price &nbsp;:&nbsp;&nbsp;
-                <span style={{color:'#6B7AA1'}}>432000 s.p</span> 
-            </span>
+                <span style={{color:'#11324D'}}>
+                    Payment Expiry Date &nbsp;:&nbsp;&nbsp;
+                    <span style={{color:'#6B7AA1'}}>09/03/2022</span> 
+                </span>
 
-            <span style={{color:'#11324D'}}>
-                The Rest &nbsp;:&nbsp;&nbsp;
-                <span style={{color:'#6B7AA1'}}>200000 s.p</span> 
-            </span>
+                <span style={{color:'#11324D'}}>
+                    Payment Repeater &nbsp;:&nbsp;&nbsp;
+                    <span style={{color:'#6B7AA1'}}>{props.repeater}</span> 
+                </span>
+            </div>
 
-            <span style={{color:'#11324D'}}>
-                Paid So Far &nbsp;:&nbsp;&nbsp;
-                <span style={{color:'#6B7AA1'}}>232000 s.p</span> 
-            </span>
+            <div  style={{margin:'0px',padding:'0px',display:'flex',flexDirection:'column',lineHeight:'40px',display:monthlyPrice}}>
 
-            <span style={{color:'#11324D'}}>
-                Payment Expiry Date &nbsp;:&nbsp;&nbsp;
-                <span style={{color:'#6B7AA1'}}>09/03/2022</span> 
-            </span>
+                <span style={{color:'#11324D'}}>
+                    The Rest &nbsp;:&nbsp;&nbsp;
+                    <span style={{color:'#6B7AA1'}}>200000 s.p</span> 
+                </span>
 
-            <span style={{color:'#11324D'}}>
-                Payment Repeater &nbsp;:&nbsp;&nbsp;
-                <span style={{color:'#6B7AA1'}}>{props.repeater}</span> 
-            </span>
+                <span style={{color:'#11324D'}}>
+                    Paid So Far &nbsp;:&nbsp;&nbsp;
+                    <span style={{color:'#6B7AA1'}}>232000 s.p</span> 
+                </span>
+
+                <span style={{color:'#11324D'}}>
+                    Monthly Installment &nbsp;:&nbsp;&nbsp;
+                    <span style={{color:'#6B7AA1'}}>23000 s.p</span> 
+                </span>
+
+            </div>
 
             
             <div style={{visibility: repeaternote}}>

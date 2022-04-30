@@ -141,6 +141,17 @@ function RequiredPayment(props){
                         <RequiredPaymentCard repeater='no'/>
                         <RequiredPaymentCard repeater='yes' paid='none'/>
                         <RequiredPaymentCard repeater='no'/>
+                        <RequiredPaymentCard repeater='no'/>
+                        <RequiredPaymentCard repeater='no'/>
+                        <RequiredPaymentCard repeater='no'/>
+                        <RequiredPaymentCard repeater='no'/>
+                        <RequiredPaymentCard repeater='yes' paid='yes'/>
+                        <RequiredPaymentCard repeater='yes' paid='yes'/>
+                        <RequiredPaymentCard repeater='yes' paid='yes'/>
+                        <RequiredPaymentCard repeater='yes' paid='yes'/>
+                        <RequiredPaymentCard repeater='yes' paid='yes'/>
+                        <RequiredPaymentCard repeater='no'/>
+                        
 
                     </div>
 

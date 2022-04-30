@@ -13,7 +13,7 @@ import {
   Span,
   Rsection,
   Content,
-  Link,
+  Link1,
   Input,
   Input2,
   Form,
@@ -53,7 +53,7 @@ function LogIn() {
               <ChooseButton
                 type="button"
                 onClick={() => {
-                  route('/Mangment/Dashboard');
+                  route('/Mangment/Dashbord');
                   $('body').css('overflow', 'auto');
                 }}
               >
@@ -89,14 +89,14 @@ function LogIn() {
         <Rsection>
           <Content>
             Sign in to your account or{' '}
-            <Link href="/SignUP">create a new account</Link>
+            <Link1 href="/SignUP">create a new account</Link1>
           </Content>
           <Form>
             <Input
               type="email"
               id="email"
               name="email"
-              placeholder="     Enter Your Email"
+              placeholder="     Enter Your Email address"
             ></Input>
             <Input
               type="password"
@@ -106,7 +106,7 @@ function LogIn() {
             ></Input>
             <FormContent>
               <Input2 onClick={handlesubmit}>Log In</Input2>
-              <Link2>Forget your password?</Link2>
+              <Link2 onClick={()=>route('/ResetPassword')}>Forget your password?</Link2>
             </FormContent>
           </Form>
         </Rsection>

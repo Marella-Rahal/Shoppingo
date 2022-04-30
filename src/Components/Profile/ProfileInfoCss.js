@@ -16,7 +16,7 @@ export const InnerContainer = styled.div`
   left:20%;
   padding-left:15px;
   background: #fbf2d1;
-  @media (max-width: 910px) {
+  @media (max-width: 930px) {
     width:100%;
     top:72px;
     height:165vh;
@@ -28,7 +28,7 @@ export const Content = styled.div`
   height: 100%;
   display: flex;
 
-  @media (max-width: 910px) {
+  @media (max-width: 930px) {
     flex-direction: column-reverse;
   }
 `;
@@ -58,6 +58,13 @@ margin-left: 20px;
 border: none;
 font-size:20px;
 font-weight: bold;
+color:#6b7aa1;
+&:hover{
+  color:#11324d;
+  border:1px solid rgba(17, 50, 77, 0.2);
+  box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.25);
+
+}
 }
 
 
@@ -67,10 +74,10 @@ export const Button = styled.button`
   background: #f5cb59;
   box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  margin-top: 65px;
+  margin-top: 50px;
   width: 30%;
   height: 32px;
-  margin-left: 10px;
+  // margin-left: 10px;
   color: #6b7aa1;
   border: none;
   &:hover {

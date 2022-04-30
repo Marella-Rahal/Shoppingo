@@ -6,7 +6,7 @@ min-height: 110px;
 width:100%;
 color: #11324D;
 padding-right: 15px;
-@media (max-width: 910px) {
+@media (max-width: 930px) {
    flex-direction :column;
 
   }`
@@ -19,7 +19,7 @@ flex-direction:column;
 WIDTH: 30%;
 JUSTIFY-CONTENT: start;
 ALIGN-ITEMS: flex-start;
-@media (max-width: 910px) {
+@media (max-width: 930px) {
     width:100%;
     margin: 15px 0px !important;
   }
@@ -51,7 +51,7 @@ export const InputContainer = styled.div`
 display:flex;
 flex-direction: column;
 width:65%;
-@media (max-width: 910px) {
+@media (max-width: 930px) {
     align-items: flex-start;
     width: 100%;
 }
@@ -75,7 +75,7 @@ export const FormContainer = styled.div`
 
 
 
- @media (max-width: 910px) {
+ @media (max-width: 930px) {
     flex-direction:column;  
  }
 `

@@ -17,7 +17,8 @@ import RequiredPayment from './Components/RequiredPayment/RequiredPayment';
 import Payment from './Components/Payment/Payment';
 import Dashboard from './Components/Dashboard/Dashboard';
 import UpgradeProfile from './Components/UpgradeProfile/UpgradeProfile';
-
+import ResetPassword from './Components/ResetPassword/ResetPassword';
+import SellerDashboard from './Components/SallerDashboard/SallerDashboard/SallerDashboard';
 
 function App(props) {
   return (
@@ -38,6 +39,8 @@ function App(props) {
 
                 <Route path='/SignUp' element={<SignUp/>}/>
 
+                <Route path='/ResetPassword' element={<ResetPassword/>}/>
+
                 <Route path='/UpgradeProfile' element={<UpgradeProfile/>}/>
 
                 <Route path="/ProductDetail" element={<Productdetailbody/>}/>
@@ -56,6 +59,7 @@ function App(props) {
 
                 <Route path="/Mangment/InsertRequiredPayments" element={<InsertRequiredPayment/>}/>
 
+                <Route path="/Mangment/SellerDashboard" element={<SellerDashboard/>}/>
 
                 <Route path='*' element={<NotFound/>} />
 

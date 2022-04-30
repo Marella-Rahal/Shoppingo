@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const InputRadio=styled.input.attrs({
+const InputRadio=styled.input.attrs(props=>({
      type:"radio",
-     name:"color"
- })`
+     name:props.name
+ }))`
     width:25px;
     height:25px;
     margin-inline:2px;
@@ -34,7 +34,7 @@ function Colors(props) {
 
     return (
         <>
-            <InputRadio color={props.color}/>
+            <InputRadio color={props.color} name={props.name}/>
         </>
     );
 }

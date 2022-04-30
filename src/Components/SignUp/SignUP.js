@@ -105,18 +105,21 @@ function SignUp() {
             </Button2>
           </ButtonS>
 
+          <Contain style={{marginBottom:'5px'}}>or</Contain>
+
           <Form>
             <Input
               type="text"
               id="fname"
               name="firstname"
               placeholder="     Enter Your Name"
+              style={{marginTop:'0px'}}
             ></Input>
             <Input
               type="email"
               id="email"
               name="email"
-              placeholder="     Enter Your Email"
+              placeholder="     Enter Your Email address"
             ></Input>
             <Input
               type="password"

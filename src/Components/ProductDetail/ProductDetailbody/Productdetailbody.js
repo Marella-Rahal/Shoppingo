@@ -54,22 +54,15 @@ function Productdetailbody(props) {
                     <Details name="Colors" content={color}/>
 
                     <div ref={color} style={{marginInline:'20px'}}>
-                        <Colors color="black"/>
-                        <Colors color="blue"/>
-                        <Colors color="red"/>
-                        <Colors color="pink"/>
-                        <Colors color="Yellow"/>
-                        <Colors color="brown"/>
-                        <Colors color="red"/>
-                        <Colors color="green"/>
-                        <Colors color="Yellow"/>
-                        <Colors color="black"/>
-                        <Colors color="blue"/>
-                        <Colors color="Yellow"/>
-                        <Colors color="brown"/>
-                        <Colors color="red"/>
-                        <Colors color="green"/>
-                        <Colors color="white"/>
+                        <Colors color="black" name="color" />
+                        <Colors color="blue" name="color"/>
+                        <Colors color="red" name="color"/>
+                        <Colors color="pink" name="color"/>
+                        <Colors color="Yellow" name="color"/>
+                        <Colors color="brown" name="color"/>
+                        <Colors color="green" name="color"/>
+                        <Colors color="white" name="color"/>
+                        <Colors color="grey" name="color"/>
 
                     </div>
 

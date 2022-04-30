@@ -16,7 +16,7 @@ export const InnerContainer = styled.div`
   padding-left:15px;
   padding-bottom:50px;
   background: #fbf2d1;
-  @media (max-width: 910px) {
+  @media (max-width: 930px) {
     width:100%;
     min-height:165vh ;
     top:72px;
@@ -29,7 +29,7 @@ export const TopNavbar = styled.div`
   display: flex;
   justify-content: space-between;
   margin:0px;
-  @media (max-width: 910px) {
+  @media (max-width: 930px) {
     height: 8vh;
   }
 `;
@@ -39,25 +39,29 @@ export const Title = styled.h1`
   font-weight: 700;
   color: #11324d;
 `;
+
 export const Content = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
 
-  @media (max-width: 910px) {
+  @media (max-width: 930px) {
     flex-direction: column;
   }
 `;
+
 export const Section = styled.div`
   width: 50%;
-   height: 85vh;
+  min-height: 85vh;
   // height: 100%;
   display: flex;
   flex-direction: column;
+ 
 
-  @media (max-width: 910px) {
-    height: 75vh;
+  @media (max-width: 930px) {
+    min-height: 75vh;
     width: 100%;
+    margin-top:30px;
   }
 `;
 export const ProductName = styled.div`
@@ -72,6 +76,8 @@ export const Label = styled.label`
   font-size: 23px;
   line-height: 39px;
   color: #6b7aa1;
+  margin-left:2px;
+  margin-block:10px;
 `;
 
 export const InputText = styled.input`
@@ -88,7 +94,7 @@ export const InputText = styled.input`
 export const ProductPrice = styled.div`
 width:100%
 display:flex;
-flex-direction: column;
+flex-direction: column !important;
 margin: 20px 0px ;
 `;
 export const RadioSection = styled.div`
@@ -116,6 +122,7 @@ export const InputNumber = styled.input`
   height: 40px;
   font-size: 25px;
   padding-left: 10px;
+  margin-block:7px;
 `;
 export const PriceWithOffer = styled.div`
   width: 100%;
@@ -151,6 +158,8 @@ export const InputChek = styled.input`
   width: 20px;
   height: 27px;
 `;
+
+
 export const DivSize = styled.div`
   width: 100%;
   display: flex;
@@ -175,7 +184,7 @@ export const ProductDescription = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 12px 0px;
+  margin: 2px 0px;
 `;
 
 export const ColorDiv = styled.div`
@@ -200,7 +209,7 @@ export const DivButton = styled.div`
   height: 50px;
   align-items: end;
   justify-content: flex-end;
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
 `;
 export const Button2 = styled.button`
@@ -216,6 +225,9 @@ export const Button2 = styled.button`
   &:hover {
     color: #11324d;
     background-color: #846703;
+  }
+  @media(max-width:1377px){
+    font-size:20px;
   }
 `;
 

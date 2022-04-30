@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SideNavbar from '../AddProduct/SideNavbar/SideNavbar';
 import { AddShoppingCart, Favorite } from '@mui/icons-material';
 import {
