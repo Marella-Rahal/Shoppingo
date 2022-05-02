@@ -8,7 +8,10 @@ import CustomersOpinion from '../CustomersOpinion/CustomersOpinion';
 import Footer from '../Footer/Footer';
 
 function Homebody(props) {
+
     const route=useNavigate();
+
+
     return (
         <>
              <Navbar/>
@@ -16,7 +19,7 @@ function Homebody(props) {
 
                  <img src={background} className="float-end background-img" alt="Background"/>
 
-                <h1 style={{color:'#846703'}}>WELCOME TO SHOPPINGO</h1>
+                <h1 style={{color:'#846703',textShadow:'1px 2px #222324'}}>WELCOME TO SHOPPINGO</h1>
 
                 <p className="description">
                     Our website allows you to search the market from your home AND helps you control your monthly expenses and remind you of your bills

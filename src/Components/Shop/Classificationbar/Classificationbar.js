@@ -24,7 +24,7 @@ function Classificationbar(props) {
         $('#Sman').css('display','none');
         $('#Swoman').css('display','block');
         $('.product').css('marginTop','-850px');
-        $('.back').css('minHeight','150vh');
+        $('.back').css('minHeight','155vh');
     }
 
 

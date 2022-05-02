@@ -1,43 +1,30 @@
 import React from 'react';
 import Navbar from '../Home/Navbar/Navbar';
 import LSbackground from '../../Images/SignUp2.jpg';
-import {
-  Lsection,
-  Overlay,
-  Title,
-  Span,
-  Contain,
-  Button1,
-  Button1C,
-  Button2,
-  Button2c,
-  Input,
-  Input2,
-  Container,
-  Rsection,
-  ButtonS,
-  Form,
-  BlueFacebook,
-  RedGoogle,
-  HLine,
-} from './SignUPcss.js';
-import {
-  FullScreen,
-  Popup,
-  ChooseContainer,
-  ChooseButton,
-  VLine,
-} from '../LogIn/LogIncss';
+import {Lsection,Overlay,Title,Span,Contain,Button1,Button1C,Button2,Button2c,Input,Input2,Container,Rsection,ButtonS,Form,BlueFacebook,RedGoogle,HLine} from './SignUPcss.js';
+import {FullScreen,Popup,ChooseContainer,ChooseButton,VLine} from '../LogIn/LogIncss';
 import { useNavigate } from 'react-router';
 import $ from 'jquery';
+
+
 function SignUp() {
+
   const route = useNavigate();
+
+
   const handlesubmit = (e) => {
+
     e.preventDefault();
+
+    //todo pop_up after sending the info 
+
     $('.popupdiv').fadeTo(700, 1);
     $('.fullscreen').fadeTo(700, 1);
     $('body').css('overflow', 'hidden');
+
   };
+
+
   return (
     <>
       <Navbar />
@@ -115,7 +102,7 @@ function SignUp() {
               placeholder="     Enter Your Name"
               style={{marginTop:'0px'}}
             ></Input>
-            <Input
+            <Input           
               type="email"
               id="email"
               name="email"
@@ -123,13 +110,13 @@ function SignUp() {
             ></Input>
             <Input
               type="password"
-              id="password"
+              id="password1"
               name="password"
               placeholder="     Enter Your Password"
             ></Input>
             <Input
               type="password"
-              id="password"
+              id="password2"
               name="password"
               placeholder="     Confirm password "
             ></Input>
